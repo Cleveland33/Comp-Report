@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/mystyles.css">
+    <title>The Fashion Pet</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-1"> The Fashion Pet</h1>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                    </li>                        
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                </ul>        
+            </div>
+        </div>
+     </nav>
+      <main id="main">
+          <h2 class="text-center">Register</h2>
+          <!-- name,age,breed,gender,service,owner,phone-->
+          <div class="container">
+          <form action="#">
+            <input type="text" id="petNameTxt" class="form-control" placeholder="Enter pet's name"><br>
+            
+            <input type="number" name="age" id="petAgeTxt" class="form-control" placeholder="Enter pet's age"><br>
+            <input type="text" id="petBreedTxt" class="form-control" placeholder="Enter pet's breed"><br>
+            <input type="text" id="petGenderTxt" class="form-control" placeholder="Enter pet's gender"><br>
+            <!--<input type="text" id="petServiceTxt" class="form-control" placeholder="Enter pet's service"><br>-->
+            <select name="service" id="petServiceTxt" class="form-control">
+              <option disabled selected>--- Select an option ---</option>
+              <option value="nails">Nails cut</option>
+              <option value="hair">Hair cut</option>
+              <option value="shower">Shower</option>
+              <option value="full">Full Service</option>
+            </select><br>
+            <input type="text" id="ownerNameTxt" class="form-control" placeholder="Enter owner's name"><br>
+            <input type="text" id="ownerPhoneTxt" class="form-control" placeholder="Enter contact phone"><br>
+       
+          </form>
+          
+          <button id="site-register" class="btn btn-dark">Register</button>
+          </div>
+
+          <div class="info container">
+            <p id="numberPets">Registered pets: 10</p>
+            <p id="profits">Profits: $0.00</p>
+          </div>
+          <div class="container">
+              <input class="form-control" type="search" name="petSearch" id="petSeach">
+              <button id="search-btn" class="btn btn-success">Search</button>              
+          </div>
+          <div class="container" id="pets">
+
+          </div>
+          <br>
+          <br>
+
+        <div id="word">
+          <label for="site-search">Search Fashion Pet:</label>
+          <input type="search" id="site-search" name="q" aria-label="Search through site content">
+          <button id="siteSearch" class="btn btn-light">Search</button>
+        </div>
+          <br>
+          <br>
+
+      </main>
+
+      <footer id="footer-text">
+
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/register.js"></script>
+      <script src="js/display.js"></script>
+      
+      
+</body>
+</html>
